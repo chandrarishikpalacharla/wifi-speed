@@ -34,8 +34,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      reset();
+    WidgetsBinding.instance.addPostFrameCallback((_) async { // This is like saying, "After the first frame is shown, do this:"
+      reset(); // This is where you set up your initial values or configurations.
     });
   }
 
